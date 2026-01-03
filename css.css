@@ -336,6 +336,7 @@ h4{
     display:flex;
     flex-direction: column;
     align-items: center;
+    overflow:hidden;
 }
 #ratings-carousel{
     padding-top: 3rem;
@@ -382,6 +383,7 @@ h4{
     padding-right:1rem;
     position:relative;
     height: 60vh;
+    overflow:hidden
 }
 #footer-book{
     font-family: fontMedium;
