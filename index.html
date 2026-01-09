@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weikien Dental</title>
+    <link href="css.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css">
+<link href="css.css" rel="stylesheet">
+</head>
+<body>
+    <div data-scroll-container>
+        <div id="landing-page">
+        <img id="logo-landing" src="assets/Logo White.png"  draggable="false" inert="true" class="ll1">
+        <h1 style="color:white;">Your Personalized<br>Dental Care<br>Starts Here</h1>
+        <h4 style="margin-top:1rem;color:white;" id="weikien">WEIKIEN DENTAL</h4>
+        <button id="book-appointment"><h2>Book appointment</h2></button>
+        <video id="landing-bg"src="assets/landing bg placeholder.mp4" autoplay loop></video>
+        <div id="overlay"></div>
+    </div>
+    <div id="services">
+        <h1>Our Services</h1><br>
+        <h2>What we do best with 25 years of experience</h2>
+    </div>
+    <div id="services-list">
+        <div class="service-debug">
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png"  draggable="false" inert="true">
+                <h2>Scaling & Polishing</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png"  draggable="false" inert="true">
+                <h2>Consultation</h2>
+                <h3 class="service-desc">Check-ups for your teeth</h3>
+            </div>
+        </div>
+        <div class="service-debug">
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png" draggable="false" inert="true">
+                <h2>Dental Filling</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png" draggable="false" inert="true">
+                <h2>Extraction</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+        </div>
+        <div class="service-debug">
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png" draggable="false" inert="true">
+                <h2>Minor Oral Surgery</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png" draggable="false" inert="true">
+                <h2>Crown & Bridge</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+        </div>
+        <div class="service-debug">
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png" draggable="false" inert="true">
+                <h2>Root Canal Treatment</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+            <div id="services-box">
+                <img class="service-icon" src="assets/service icon placeholder.png" draggable="false" inert="true">
+                <h2>Removable Denture</h2>
+                <h3 class="service-desc">Deep cleaning for a brighter smile</h3>
+            </div>
+        </div>
+            
+            
+    </div>
+    <div id="cosmetics">
+        <h1 id="wd40">Everyone needs a <br>good smile</h1><br>
+        <h2>Access misc & cosmetic services</h2>
+        <div id="cosmetic-options">
+            <button class="cosmetic-button" id="nonL" onclick="rotate(0)">Night Guard</button>
+            <button class="cosmetic-button" id="current" onclick="rotate('M')">Whitening</button>
+            <button class="cosmetic-button" id="nonR"  onclick="rotate(2)">Retainer</button>
+        </div>
+        <div id="cosmetic-carousel">
+            <div id="cosmetic-box-container" class="cosmetic-box-nonL">
+                <div id="cosmetic-box">
+                <div class="cosmetic-overlay">
+                    <img id="logo-landing" src="assets/Logo White.png" style="width:2rem;" class="cosmetic-logo">
+                    <h1 style="z-index:2;position:relative;font-family:fontMedium;" id="cosmetic-title">Whitening</h1><br>
+                    <h2>Possibly the whitest transformation ever for your teeth</h2>
+                    <button id="cosmetic-appointment">Book Appointment</button>
+                </div>
+                </div>
+            </div>
+            <div id="cosmetic-box-container" class="cosmetic-box-current">
+                <div id="cosmetic-box">
+                <div class="cosmetic-overlay">
+                    <img id="logo-landing" src="assets/Logo White.png" style="width:2rem;"  class="cosmetic-logo">
+                    <h1 style="z-index:2;position:relative;font-family:fontMedium;"  id="cosmetic-title">Whitening</h1><br>
+                    <h2>Possibly the whitest transformation ever for your teeth</h2>
+                    <button id="cosmetic-appointment">Book Appointment</button>
+                </div>
+                </div>
+            </div>
+            <div id="cosmetic-box-container" class="cosmetic-box-nonR">
+                <div id="cosmetic-box">
+                <div class="cosmetic-overlay">
+                    <img id="logo-landing" src="assets/Logo White.png" style="width:2rem;"  class="cosmetic-logo">
+                    <h1 style="z-index:2;position:relative;font-family:fontMedium;"  id="cosmetic-title">Whitening</h1><br>
+                    <h2>Possibly the whitest transformation ever for your teeth</h2>
+                    <button id="cosmetic-appointment">Book Appointment</button>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="branches">
+        <h1>Our Branches</h1><br>
+        <h2>Find the closest clinic near you</h2><br><br>
+        <div id="branch-cont">
+            <div id="branch-box">
+                <div id="branch-overlay">
+                    <img src="assets/Logo White.png" id="branch-logo"  draggable="false" inert="true">
+                    <div id="gay">
+                        <h2>Teecare Dental Clinic</h2>
+                        <h3 style="color:white;">Seri Kembangan, Selangor</h3>
+                    </div>
+                    <img src="assets/right-arrow.png" id="branch-arrow"  draggable="false" inert="true" onclick="dropBranch(1)">
+                    <div id="branch-info">
+                        <div id="kvisgay"><img src="assets/Location.png" class="branch-info-icon"><h3>9-2 (Tingkat 2), 3Elements, Jalan Putra Permai Selesa, Pusat Bandar Putra Permai, 43300 Seri Kembangan, Selangor</h3></div>
+                        <div id="kvisgay"><img src="assets/time.png" class="branch-info-icon"><h3>Mon - Thu: 1PM - 7PM Fri: 5:30PM - 8:30PM Sat & Sun: 9:30AM - 8:30AM</h3></div>
+                        <div id="kvisgay"><img src="assets/phone.png" class="branch-info-icon"><h3>+60189575888</h3></div>           
+                        <div id="branch-contacts">
+                            <div class="branch-contact"><img src="assets/whatsapp.png" class="branch-info-icon"> <h3 style="color:white;">Book an appointment</h3></div>
+                            <div class="branch-contact"><img src="assets/waze.png" class="branch-info-icon"> <h3 style="color:white;">Get directions to us</h3></div>
+                        </div>             
+                    </div>
+                </div>
+            </div>
+        <div id="branch-box-2">
+            <div id="branch-overlay-2">
+                    <img src="assets/Logo White.png" id="branch-logo"  draggable="false" inert="true">
+                    <div id="gay">
+                        <h2>Tee Dental Surgery</h2>
+                        <h3 style="color:white;">Pusat Bandar Puchong, Selangor</h3>
+                    </div>
+                    <img src="assets/right-arrow.png" id="branch-arrow"  draggable="false" inert="true" onclick="dropBranch(1)">
+                    <div id="branch-info">
+                        <div id="kvisgay"><img src="assets/Location.png" class="branch-info-icon"><h3>Suite 2, Block F, Setia Walk F, 9-5, Persiaran Wawasan, Pusat Bandar Puchong, 47160 Puchong, Selangor</h3></div>
+                        <div id="kvisgay"><img src="assets/time.png" class="branch-info-icon"><h3>Mon - Sat: 8:30AM - 5PM</h3></div>
+                        <div id="kvisgay"><img src="assets/phone.png" class="branch-info-icon"><h3>+60189597888</h3></div>           
+                        <div id="branch-contacts">
+                            <div class="branch-contact gayvern"><img src="assets/whatsapp.png" class="branch-info-icon"> <h3 style="color:white;">Book an appointment</h3></div>
+                            <div class="branch-contact gayvern"><img src="assets/waze.png" class="branch-info-icon"> <h3 style="color:white;">Get directions to us</h3></div>
+                        </div>             
+                    </div>
+                </div>
+        </div>
+            
+        </div>
+            <div id="branch-box-3"><h2>New branches coming soon.</h2></div>
+        <div id="overlay-topfiller"></div>
+        <img src="assets/branch filler.png" id="filler"  draggable="false" inert="true">
+    </div>
+    <div id="history">
+        <div id="newteeth-container">
+            <img src="assets/black newTeeth.png" class="newteeth"  draggable="false" inert="true">
+            <img src="assets/blue newTeeth.png" class="newteeth"  draggable="false" inert="true">
+        </div>
+        <h4>WEIKEIN DENTAL</h4><br>
+        <h1 id="humble">Humble<br> Beginnings</h1><br><br>
+        <h2>Get to know our history & about us</h2><br><br><br>
+        <img src="assets/history line.png" id="history-line" draggable="false" inert="true">
+        <div id="statistics" data-scroll data-scroll-speed="3">
+            <div>   
+                <h1 id="unique-patients">0</h1>
+                <h2>Unique Patients</h2><br><br><br>
+            </div>
+            <div>
+                <h1 id="total-treats">~</h1>
+                <h2>Total Treatments</h2><br><br><br>
+            </div>
+            <div>
+                <h1 id="years">0</h1>
+                <h2>Years of experience</h2><br><br><br>
+            </div>
+            <img src="assets/stars.png" draggable="false" inert="true" id="stars"> 
+        </div>
+    </div>
+    <div id="ratings">
+        <h1 style="color:white;text-align: center;">Hear from <br>others</h1><br>
+        <h2 style="color:white;">Reviews posted on google maps</h2>
+        <div id="ratings-carousel">
+            <div class="rating-box">
+                <div class="rating-top">
+                    <img src="assets/user.png" id="user"  draggable="false" inert="true">
+                    <h2>-Ily Lily</h2>
+                    <img src="assets/5stars.png" id="star5">
+                </div>
+                <h3 class="rating-desc">My first time coming to Teecare clinic. I was scared at first but Dr and nurse guide me, helping me with my treatment and both are very kind. They keep me calm and keep checking on me to see if I was ok during the treatment which make me less nervous. Overall, I am really satisfied with the service and the price is really reasonable. Recommended! 5 star 🌟🌟🌟🌟🌟
+                    </h3>
+            </div>
+            <div class="rating-box">
+                <div class="rating-top">
+                    <img src="assets/user.png" id="user"  draggable="false" inert="true">
+                    <h2>-"Foghorn D"</h2>
+                    <img src="assets/5stars.png" id="star5-2">
+                </div>
+                <h3 class="rating-desc">About two weeks ago, I went for an molar tooth extraction as it has a big hole due to my filling drop off which I have done in Singapore. Not only it did not cause any pain, it also stop bleeding in about 3 hours time.  Thank you Dr Tee for your concern and keeping me calm during the process
+                    </h3>
+            </div>
+        </div>
+        <img src="assets/rating filler.png" id="rating-filler"  draggable="false" inert="true">
+        <div id="footer">
+            <h1>Book an appointment now!</h1>
+            <button id="footer-book">Book appointment</button><br>
+            <button id="footer-enquire">Enquire</button>
+            <img src="assets/LogoSVG.svg" id="footer-logo" draggable="false" inert="true">
+            <h4 id="company-name">WEIKIEN DENTAL 2026</h4>
+            <span id="makers"></span>
+        </div>
+        
+    </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="js.js"></script>
+</body>
+</html>

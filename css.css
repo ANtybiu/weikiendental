@@ -1,0 +1,867 @@
+@font-face {
+    font-family: fontMedium;
+    src: url(fonts/MONTSERRAT-MEDIUM.TTF);
+    font-weight: 900;
+}
+@font-face {
+    font-family: fontSemi;
+    src: url(fonts/MONTSERRAT-VARIABLEFONT_WGHT.TTF);
+    font-weight: 600
+}
+@font-face {
+    font-family: Logo;
+    src: url(fonts/OUTFIT-LIGHT.TTF);
+    font-weight:900;
+}
+
+html.has-scroll-smooth {
+    overflow: hidden;
+}
+
+html.has-scroll-dragging {
+    user-select: none;
+}
+
+.has-scroll-smooth body {
+    overflow: hidden;
+}
+
+[data-scroll-container] {
+    min-height: 100vh;
+}
+
+html{
+    font-size: 3.9vw;
+    padding:0;
+    margin:0;
+    -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+body{
+    padding:0;
+    margin:0;
+    background-color: #f5f5f5;
+    -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox, Safari 18.2+, Chromium 121+ */
+}
+h1{
+    font-family: fontSemi;
+    font-size: 2.9rem;
+    margin: 0;
+}
+
+h2{
+    font-family: fontMedium;
+    font-size:1rem;
+    margin:0;
+}
+h3{
+    font-family: fontMedium;
+    font-size: 0.6rem;
+    color:#D9D9D9;
+    margin:0;
+}
+h4{
+    font-family: Logo;
+    font-size: 1rem;
+    margin:0;
+}
+
+#landing-page{
+    position: relative;
+    padding-top: 22rem;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+    overflow: hidden;
+    height:55vh;
+    margin-bottom:5rem;
+}
+
+#book-appointment{
+    margin-top: 4rem;
+    margin-left: 20%;
+    font-family: fontMedium;
+    background-color: #ffffff;
+    border:none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem;
+    scale:0.8
+}
+#logo-landing{
+    position: absolute;
+    top: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+    width:3rem;
+}
+#landing-bg{
+    width:100vw;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+    object-fit: cover;
+    object-position: center center;
+    border:none;
+}
+
+#overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+#services{
+    text-align: center;
+    width:100%;
+    height:100%;
+}
+#services-list{
+    display:flex;
+    align-items: center;
+    padding-left:1vw;
+    padding-right:1vw;
+    margin-top:2.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 7rem;
+}
+#services-box{
+    position: relative;
+    width:42.5vw;
+    height:47.5vw;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 1rem;
+    padding:0.5rem;
+    box-sizing: border-box;
+}
+.service-icon{
+    width:30%;
+    margin-bottom: 1rem;
+}
+.service-desc{
+    position: absolute;
+    bottom: 1rem;
+    width:60%;
+    text-align: center;
+}
+.service-debug{
+    display: flex;
+    gap: 1rem;
+}
+#cosmetics{
+    text-align:center;
+    height:95vh;
+    padding-bottom: 5rem;
+}
+#cosmetic-options{
+    margin-top: 1.5rem;
+    display:flex;
+    justify-content: space-between;
+    padding-left:2.5rem;
+    padding-right:2.5rem;
+    padding-bottom: 2.5rem;
+    gap:2vw;
+}
+.cosmetic-button{
+    background-color: #EEEEEE;
+    width: 26vw;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    border:none;
+    font-family: fontMedium;
+}
+#current{
+    background-color: black;
+    color:white;
+    border-radius: 1000rem;
+}
+#cosmetic-carousel{
+    position:relative;
+    height:100%;
+    overflow: hidden;
+}
+#cosmetic-box{
+    position: relative;
+    width: 80vw;
+    height: 110vw;
+    background-image: url(assets/cosmetic\ placeholder.png);
+    border-radius: 1.5rem;
+    background-position: center;
+    background-size: cover;
+}
+#cosmetic-box-container{
+    position: absolute;
+  transform: translate(-50%);
+}
+.cosmetic-overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 1) 65%);
+    width:100%;
+    height:100%;
+    border-radius: 1.5rem;
+    color:white;
+    padding-top:5rem;
+    box-sizing: border-box;
+}
+#cosmetic-appointment{
+    font-family: fontMedium;
+    border:none;
+    width:50%;
+    height:10%;
+    margin-top:50%;
+    border-radius:0.5rem;
+}
+.cosmetic-box-nonL{
+    position: absolute;
+    margin-top:3rem;
+    left: -60%;
+    transform: translate(-50%);
+    rotate: -30deg;
+    transition: rotate 1.5s  ,left 1.5s  ,margin-top 1.5s ;
+}
+.cosmetic-box-nonR{
+    position: absolute;
+    margin-top:13rem;
+    left: 150% ;
+    transform: translate(-50%);
+    rotate: 30deg;
+    transition: rotate 1.5s  ,left 1.5s  ,margin-top 1.5s ;
+}
+.cosmetic-box-current{
+    margin-top:0;
+    rotate:0;
+       position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  transition: rotate 1.5s,left 1.5s,margin-top 1.5s ;
+}
+#wd40{
+    scale: 0.97;
+}
+#branches{
+    position:relative;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    height:75vh;
+}
+#branch-box,#branch-box-2,#branch-box-3{
+    position:relative;
+    width: 90vw;
+    height:7.5vh;
+    background-color: black;
+    color:white;
+    border-radius: 1rem;
+    display:flex;
+    align-items: center;
+    padding-left:1rem;
+    padding-right:1rem;
+    box-sizing: border-box;
+    gap:1rem;
+    margin-bottom: 0.75rem;
+}
+#branch-logo{
+    width:2.5rem;
+}
+#gay{
+    display:flex;
+    flex-direction: column;
+    gap: 0.15rem;
+}
+#branch-arrow{
+    position: absolute;
+    right:1rem;
+    width:2rem;
+}
+#branch-box-2{
+    background-color: #203864;
+}
+#branch-box-3{
+    justify-content: center;
+    background-color: #63834f;
+}
+#filler{
+    position: absolute;
+    bottom:0;
+    width:100vw;
+    height: 30vh;
+    object-fit: cover;
+}
+#overlay-topfiller{
+    position: absolute;
+    bottom:30vh;
+    width:100vw;
+    height:15vh;
+    background: linear-gradient(180deg,rgba(245, 245, 245, 1) 0%, rgba(255, 255, 255, 1) 100%);
+    z-index: -1;
+}
+#overlay-bottomfiller{
+    position: absolute;
+    bottom:-20vh;
+    width:100vw;
+    height:20vh;
+    background: linear-gradient(0deg,rgba(245, 245, 245, 1) 0%, rgba(255, 255, 254, 1) 63%);
+    z-index: 0;
+}
+#history{
+    position: relative;
+    padding-top:8.5rem;
+    text-align: center;
+    background-color: white;;
+    padding-bottom:5rem;
+    border-bottom-left-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    z-index:10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+.newteeth{
+    width:3rem;
+}
+#newteeth-container{
+    display: flex;
+    justify-content: space-between;
+    padding-left:2rem;
+    padding-right:2rem;
+           width:100vw;
+        box-sizing: border-box;
+}
+#history-line{
+    width:50rem;
+    user-select: none;
+}
+#statistics{
+    margin-top: 5rem;
+}
+#stars{
+    width:30vw;
+}
+#ratings{
+    padding-top:6rem;
+    padding-bottom: 2rem;
+    margin-top: -3rem;
+    width:100vw;
+    height:max-content;
+    background-color: #262626;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    overflow:hidden;
+    box-sizing: border-box;
+}
+#ratings-carousel{
+    padding-top: 3rem;
+}
+.rating-box{
+    width:95vw;
+    height:38vw;
+    background-color: #f5f5f5;
+    border-radius: 1rem;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+}
+.rating-top{
+    display:flex;
+    align-items: center;
+}
+.rating-desc{
+    margin-top: 1rem;
+    text-align: center;
+}
+#user{
+    width:2rem;
+    margin-right: 2%;
+}
+#star5{
+    width:4rem;
+    margin-left:55%
+}
+#star5-2{
+    width:4rem;
+    margin-left:42%
+}
+#rating-filler{
+    margin-top: 10vh;
+    margin-bottom:10vh;
+    object-fit: cover;
+    width:100vw;
+    height:20vh;
+}
+#footer{
+    color:white;
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+    position:relative;
+    height: 25rem;
+    overflow:hidden;
+    box-sizing: border-box;
+    width:100vw;
+}
+#footer-book{
+    font-family: fontMedium;
+    margin-top: 1rem;
+    height: 2.3rem;
+    width:11rem;
+    border:none;
+    border-radius:0.4rem;
+}
+#footer-enquire{
+    font-family: fontMedium;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width:7rem;
+    border:none;
+    border-radius:0.4rem;
+    background-color: #808080;
+    color:white;
+}
+#footer-logo{
+    position: absolute;
+    right:-4rem;
+    bottom: 0rem;
+    rotate: -20deg;
+    width:12rem;
+}
+#company-name{
+    width:100vw;
+    text-align: center;
+    position: absolute;
+    bottom:0rem;
+    left: 0;
+}
+#branch-cont{
+    display:block;
+}
+#branch-overlay,#branch-overlay-2{
+    display:none;
+}
+@media (min-width: 516px) {
+    html{
+        font-size:3.5vw;
+    }
+    #cosmetics{
+        padding-bottom: 10rem;
+    }
+    #branches{
+        height:90vh;
+    }
+    #branch-box,#branch-box-2,#branch-box-3{
+        height:9vh;
+    }
+    .rating-box{
+        height:33vw;
+    }
+}
+@media (min-width: 570px) {
+    html{
+        font-size:3.5vw;
+    }
+    #landing-page{
+        padding-top:18rem;
+        height:65vh;
+    }
+    .cosmetic-overlay{
+        padding-top:5rem;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+        box-sizing: border-box;
+    }
+    #cosmetic-appointment{
+        font-size: 0.8rem;
+    }
+    .cosmetic-button{
+        font-size:0.8rem;
+        transition: background-color 0.5s, color 0.5s, border-radius 0.5s
+    }
+    #book-appointment{
+        position: absolute;
+        left:45%;
+        transform: translateX(-50%);
+        margin-left:0;
+    }
+    #footer-book,#footer-enquire{
+        font-size:0.8rem;
+    }
+}
+@media (min-width: 610px) {
+    html{
+        font-size:3.5vw;
+    }
+    #landing-page{
+        padding-top:15rem;
+        height:70vh;
+    }
+    h3{
+        font-size:0.7rem;
+    }
+    #branch-box{
+        height:10vh;
+    }
+    .rating-box{
+        height:36vw;
+    }
+    #cosmetics{
+        padding-bottom:17rem;
+    }
+}
+@media (min-width: 660px) {
+    html{
+        font-size:3.5vw;
+    }
+    #landing-page{
+        padding-top:13rem;
+        height:70vh;
+    }
+    #branches{
+        height:100vh;
+    }
+}
+@media (min-width: 700px) {
+    html{
+        font-size:3.4vw;
+    }
+    h1{
+        font-size:2.7rem;
+    }
+    h3{
+        font-size:0.6rem;
+    }
+    #branch-box,#branch-box-2,#branch-box-3{
+        height:11vh;
+    }
+    .rating-box{
+        height:34vw;
+    }
+    .cosmetic-overlay{
+        padding-left:0.75rem;
+        padding-right:0.75rem;
+    }
+    #filler{
+        height:35vh;
+    }
+    #cosmetics{
+        padding-bottom:20rem;
+    }
+    #overlay-topfiller{
+        bottom:35vh;
+    }
+}
+@media (min-width: 768px) {
+    html{
+        font-size:3.4vw;
+    }
+    #landing-page{
+        position: relative;
+    }
+    .ll1{
+        left:35% !important;
+        width:2.5rem !important;
+    }
+    #weikien{
+        position: absolute;
+        top: 0.55rem;
+        left:43%;
+    }
+    #overlay{
+        display:none;
+    }
+    #filler{
+        display:none;
+    }
+    #overlay-topfiller{
+        bottom:0;   
+    }
+    #history{
+        padding-top:0;
+    }
+    #book-appointment{
+        left:0;
+        transform: translateX(0);
+        margin-top:0.5rem;
+    }
+}
+
+@media (min-width: 868px) {
+    html{
+        font-size:2.8vw;
+    }
+    #services-box{
+        width:32.5vw;
+        height:35vw;
+    }
+    .cosmetic-button{
+        width:18vw;
+        padding-top:0.6rem;
+        padding-bottom:0.6rem;
+    }
+    #cosmetic-options{
+        padding-left:7.5rem;
+        padding-right:7.5rem;
+    }
+    #cosmetic-box{
+        width:55vw;
+        height:70vw;
+    }
+    #cosmetic-title{
+        letter-spacing: 0.1rem;;
+    }
+    .rating-box{
+        height:25vw;
+    }
+    #rating-filler{
+        height:25vh;
+        object-fit: fill;
+    }
+}
+@media (min-width: 868px) and (min-height: 600px) {
+    html{
+        font-size:2vw;
+    }
+    #landing-page{
+        margin-bottom:0;
+    }
+    #services-list{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .service-debug{
+        justify-content: center;
+    }
+    #services-box{
+        width:22.5vw;
+        height: 26vw;
+    }
+    #logo-landing{
+        left:40% !important;
+    }
+    #weikien{
+        left:45%;   
+    }
+    #cosmetic-options{
+        padding-left:15rem;
+        padding-right:15rem;
+    }
+    .cosmetic-logo{
+        margin-left: 2.2rem;
+    }
+    #cosmetic-box{
+        width: 30vw;
+        height:40vw;
+    }
+    #cosmetic-appointment{
+        width:60%;
+        height:15%;
+        margin-top:30%
+    }
+    .cosmetic-box-nonR{
+        margin-top:11rem;
+        left:105%;
+        rotate: 25deg;
+    }
+    .cosmetic-box-nonL{
+        left:-10%;
+        rotate: -25deg;
+    }
+    #cosmetic-carousel{
+        height:110vh;
+    }
+    #branch-cont{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:1rem;
+    }
+    #branch-box,#branch-box-2{
+        width:45vw;
+        text-align:center;
+        justify-content: center;
+        align-items: baseline;
+        position:relative;
+        height:35vw;
+        border-radius:1.5rem
+    }
+    #branch-box{
+        background-image: url(assets/teecare-signboard.jpg);
+        background-size: 100% 60%;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+    }
+    #branch-box-2{
+        background-image: url(assets/kptbg.jpeg);
+        background-size: 100% 60%;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+    }
+    #branch-logo{
+        width:2rem;
+        position:absolute;
+        top:5%;
+        left:1rem;
+    }
+    #gay{
+        margin-top:1.1rem;
+    }
+    #branch-arrow{
+        display:none;
+    }
+    #branch-overlay,#branch-overlay-2{
+        background: linear-gradient(180deg,rgba(0, 0, 0, 1) 34%, rgba(255, 255, 255, 0) 100%);
+        position: absolute;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        display:block;
+        border-radius: 1.5rem;  
+    }
+    #branch-overlay-2{
+        background: linear-gradient(180deg,#203864 34%, rgba(255, 255, 255, 0) 100%);
+    }
+    #ratings-carousel{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap:0.75rem;
+    }
+    .rating-box{
+        width:47.5vw;
+        height:20vw;
+    }
+    #footer{
+        text-align: center;
+        height:20rem;
+    }
+    #footer-book{
+        height:2.6rem;
+        width:12rem;
+    }
+    #footer-enquire{
+        height:2.2rem;
+        width:9rem;
+    }
+    #rating-filler{
+        height:50vh;
+        margin:0;
+    }
+    #branch-info{
+        margin-top: 2rem;
+        display:flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .branch-info-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-right:1rem;
+    }
+    #kvisgay{
+        display:flex;
+        padding-left:1.2rem;
+        padding-right:0.5rem;
+        text-align: left;
+        color: #D9D9D9 !important;
+        align-items: center;
+    }
+    #branch-contacts{
+        margin-top:1.5rem;
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+    .branch-contact{
+        border-radius: 60606969696969rem;;
+        display:flex;
+        background-color: black;
+        align-items: center;
+        padding-left:0.5rem;
+        padding-right:0.5rem;
+        padding-top:0.4rem;
+        padding-bottom:0.4rem;
+    }
+    .gayvern{
+        background-color: #203864;
+    }
+    #branch-box-3{
+        width:50vw;
+        margin-top:0.1rem;
+    }
+    #newteeth-container{
+        padding-left:4rem;
+        padding-right:4rem;
+ 
+    }
+    #history{
+        padding-top:5rem;
+    }
+    #statistics{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        position:relative;
+    }
+    #statistics div:nth-child(3) {
+        grid-column: 1 / span 2; /* Spans from column 1 across both columns */
+        text-align: center;      /* Ensures the text inside is centered */
+    }
+    #stars{
+        position:absolute;
+        bottom:-1rem;
+        left:50%;
+        transform: translate(-50%);
+        width: 15vw;
+    }
+    #history{
+        border-bottom-left-radius: 5rem;
+        border-bottom-right-radius: 5rem;
+    }
+    .rating-desc{
+        color:#959595
+    }
+}
+@media (min-width: 1300px) and (min-height:600px){
+    html{
+        font-size: 1.8vw;
+    }
+    h1{
+        font-size:2.5rem;
+    }
+    #landing-page{
+        padding-top:9rem;
+        padding-left:2rem;
+    }
+    #book-appointment{
+        margin-left:0.8rem;
+    }
+    #services{
+        margin-top:3rem;
+    }
+    #services-box{
+        height:24vw;
+    }
+    #cosmetic-carousel{
+        height:140vh;
+    }
+    #cosmetics{
+        padding-bottom: 30rem;
+    }
+    #branches{
+        height:140vh
+    }
+    #history-line{
+        width:50rem;
+    }
+}
